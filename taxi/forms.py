@@ -8,7 +8,7 @@ from taxi.models import Driver, Car
 
 DRIVER_LICENSE_VALIDATOR = RegexValidator(
     regex=r"^[A-Z]{3}[\d]{5}$",
-    message="Enter a valid value lisense number:"
+    message="Enter a valid value license number:"
             " 1.Consist only of 8 characters"
             " 2.First 3 characters are uppercase letters"
             " 3.Last 5 characters are digits", )
