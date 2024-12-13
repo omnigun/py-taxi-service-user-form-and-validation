@@ -11,7 +11,7 @@
     <ul class="list-group">
       {% for car in car_list %}
         <li class="list-group-item">
-          <a class="btn btn-outline-primary btn-sm px-4 mr-2" href="{% url "taxi:car-detail" pk=car.id %}">id: {{ car.id }}</a>
+          <a class="btn btn-outline-primary btn-sm px-4 mr-2" href="{% url 'taxi:car-detail' pk=car.id %}">id: {{ car.id }}</a>
           {{ car.model }} ({{ car.manufacturer.name }})
         </li>
       {% endfor %}
